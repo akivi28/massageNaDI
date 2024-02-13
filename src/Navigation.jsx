@@ -11,7 +11,7 @@ const Navigation =()=>{
                 <Link to={'/aboutMaster'} className='link'>Про майстра</Link>
             </li>
             <li>
-                <Link to={''} className='link'>Послуги</Link>
+                <Link to={'/services'} className='link'>Послуги</Link>
             </li>
             <li>
                 <Link to={''} className='link'>Контакти</Link>

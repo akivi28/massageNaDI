@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RoootLayout from "./RootLayout";
 import AboutMaster from "./AboutMaster";
 import SiteMain from "./SiteMain";
+import Services from "./Services";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,8 @@ const router = createBrowserRouter([
     errorElement: <SiteMain/>,
     children:[
       {path: '/', element:<SiteMain/>},
-      {path: '/aboutMaster', element:<AboutMaster/>}
+      {path: '/aboutMaster', element:<AboutMaster/>},
+      {path: '/services', element:<Services/>}
     ]
   }
 ])
