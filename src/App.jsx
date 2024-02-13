@@ -1,11 +1,26 @@
-import React, { useState } from "react"
+import React from "react"
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import RoootLayout from "./RootLayout";
+import AboutMaster from "./AboutMaster";
 import SiteMain from "./SiteMain";
 
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element: <RoootLayout/>,
+    errorElement: <SiteMain/>,
+    children:[
+      {path: '/', element:<SiteMain/>},
+      {path: '/aboutMaster', element:<AboutMaster/>}
+    ]
+  }
+])
+
 function App() {
-  const [counter, setCounter] = useState(0);
   return (
     <>
-      <SiteMain/>
+      <RouterProvider router={router}/>
+      {/* <SiteMain/> */}
     </>
   )
 }
