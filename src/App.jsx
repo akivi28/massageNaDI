@@ -4,6 +4,7 @@ import RoootLayout from "./RootLayout";
 import AboutMaster from "./AboutMaster";
 import SiteMain from "./SiteMain";
 import Services from "./Services";
+import Contact from "./Contact";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,8 @@ const router = createBrowserRouter([
     children:[
       {path: '/', element:<SiteMain/>},
       {path: '/aboutMaster', element:<AboutMaster/>},
-      {path: '/services', element:<Services/>}
+      {path: '/services', element:<Services/>},
+      {path: '/contacts', element:<Contact/>}
     ]
   }
 ])

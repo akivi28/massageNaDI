@@ -14,7 +14,7 @@ const Navigation =()=>{
                 <Link to={'/services'} className='link'>Послуги</Link>
             </li>
             <li>
-                <Link to={''} className='link'>Контакти</Link>
+                <Link to={'/contacts'} className='link'>Контакти</Link>
             </li>
         </ul>
     </nav>)

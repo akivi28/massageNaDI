@@ -1,4 +1,4 @@
-.servicesHeaderContainer{
+.servicesHeaderContainer {
     width: 100%;
     height: 80vh;
     background-color: rgba(0, 0, 0, 0.3);
@@ -6,27 +6,32 @@
     flex-direction: column;
     align-items: center;
 }
-.servicesHeaderContainer h2{
+
+.servicesHeaderContainer h2 {
     color: white;
     margin-top: 5vh;
     font-size: 5vh;
     font-weight: 300;
 }
-.servicesHeaderContainer h1{
+
+.servicesHeaderContainer h1 {
     background-color: white;
     font-size: 10vh;
     font-weight: 400;
     margin-top: 25vh;
     padding: 1vh;
 }
-.servicesPage{
+
+.servicesPage {
     background-image: url("./assets/bg2.jpg");
     background-position-x: center;
     background-position-y: -10vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }
-.servicesBodyContainer{
+
+.servicesBodyContainer {
     width: 100%;
     height: auto;
     background-color: white;
@@ -40,11 +45,44 @@
     margin: 5vh;
     width: 50%;
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2, auto);
     gap: 1vh;
 }
-.col img{
+
+.col img {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+@media screen and (max-width:1024px) {
+    .servicesHeaderContainer {
+        height: 90vh;
+    }
+
+    .servicesHeaderContainer h1 {
+        font-size: 7vh;
+        margin-top: 35vh;
+    }
+
+    .servicesImages {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .servicesHeaderContainer h1 {
+        font-size: 5vh;
+    }
+
+    .servicesImages {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-height:500px) {
+    .servicesHeaderContainer {
+        height: 100vh;
+    }
 }
