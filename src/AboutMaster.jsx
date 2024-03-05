@@ -1,8 +1,8 @@
 import React from 'react';
 import './AboutMaster.css';
-import photo1 from './assets/elem1.jpeg';
-import photo2 from './assets/2in1elem.jpeg';
-import photo3 from './assets/4in1elem.jpeg'
+import photo1 from './assets/elem1.jpg';
+import photo2 from './assets/2in1elem.jpg';
+import photo3 from './assets/4in1elem.jpg'
 import facebookLogo from './assets/facebook-logo.png';
 import twitterLogo from './assets/twitterlogo.png';
 

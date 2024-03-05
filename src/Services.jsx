@@ -1,13 +1,11 @@
 import React from 'react';
 import './Services.css';
-import photo1 from './assets/elem1.jpeg';
-import photo2 from './assets/2in1elem.jpeg';
-import photo3 from './assets/elem3.jpeg';
-import photo4 from './assets/4in1elem.jpeg';
+import photo1 from './assets/elem1.jpg';
+import photo2 from './assets/2in1elem.jpg';
+import photo3 from './assets/elem3.jpg';
+import photo4 from './assets/4in1elem.jpg';
 import bg from './assets/headerBackground.png'
 import photo5 from './assets/2in2.jpg';
-import photo6 from './assets/3in2.jpeg'
-import photo7 from './assets/4in1elem.jpeg'
 import facebookLogo from './assets/facebook-logo.png';
 import twitterLogo from './assets/twitterlogo.png';
 
