@@ -11,8 +11,13 @@ import photo7 from './assets/4in1elem.jpg'
 import facebookLogo from './assets/facebook-logo.png';
 import twitterLogo from './assets/twitterlogo.png';
 import './SiteMain.css';
+import { useNavigate } from "react-router-dom";
 
 const SiteMain = () => {
+    const navigate = useNavigate();
+    const buttonClickHandler = () => {
+        navigate('/aboutMaster');
+    }
     return (<div className='mainPage'>
         <title>Головна</title>
         <div className='headerContainer'>
@@ -21,7 +26,7 @@ const SiteMain = () => {
                 <h2 className='massageInLviv'>Массаж у Львові</h2>
                 <h1 className='massageStudio'>Студія массажу</h1>
                 <img src={nadiLogo} alt="NADI logo" />
-                <button className='servicesbtn'>Послуги</button>
+                <button className='servicesbtn' onClick={buttonClickHandler}>Послуги</button>
             </div>
         </div>
         <div className='bodyContainer'>
@@ -53,7 +58,7 @@ const SiteMain = () => {
                     <img src={photo6} alt="photo massage 7" />
                     <img src={photo7} alt="photo massage 8" />
                 </div>
-                <button className='servicesbtn black'>Послуги</button>
+                <button className='servicesbtn black' onClick={buttonClickHandler}>Послуги</button>
             </div>
         </div>
         <footer>
